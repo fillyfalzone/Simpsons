@@ -1,0 +1,239 @@
+/* Styling GENERAL*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: #FDD116;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* Styling HEADER*/
+
+.topbar{
+    background-color:#4b8ecd;
+    text-align: center;
+    color:#fff;
+    font-size: 35px;
+    padding: 15px 0;
+}
+
+
+.banner img{
+    display: block;
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+}
+/*Navbar*/
+.navbar{
+    width: 100%;
+    background-color: #4b8ecd;
+    text-align: center;
+    border-bottom: 1px dashed white;
+}
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.navbar ul li:hover{
+    background-color: #1361ab;
+    transition: background .6s;
+}
+.navbar ul li a{
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 20px;
+   
+}
+
+/* Styling MAIN*/
+
+main{
+    padding: 20px; 
+}
+h1{
+    font-size:2.5rem ;
+    text-transform: uppercase;
+    color: #FDD116; 
+    padding-bottom: 20px; 
+}
+
+/*Container*/
+.container{
+    display: flex;
+    gap: 20px;
+}
+/* styling main article*/
+.main-article{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+
+}
+
+
+.main-article p{
+    text-align: justify;
+    
+}
+
+.block-figures{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;  
+}
+.block-figures figure{
+    flex: 1;
+    height: 100%;
+}
+.block-figures figure img{
+   width: 100%; 
+   min-width: 150px;
+   min-height: 170px;
+}
+
+/*aside*/
+.main-aside{
+    flex: 1;
+    background-color: #4b8ecd;
+    color: #e8e8e8;
+    padding: 20px;
+    text-align: center;
+}
+.main-aside figure{
+    width: 75%;
+    margin: 0 auto;
+}
+.main-aside figure img{
+    width: 100%;
+}
+.main-aside figure figcaption{
+    padding: 15px;
+}
+.main-aside figure figcaption h3{
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    padding-bottom:5px;
+}
+
+.main-aside p{
+    text-align: justify;
+}
+
+/* Et enfin le FOOTER */
+footer{
+    background-color: #04396b;
+    color: #fff;
+    text-align:center ;
+}
+
+footer small{
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 0;
+}
+footer small::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: url(img/Group.svg) center center / cover no-repeat;
+    display: inline-block;
+}
+
+ @media screen and (max-width:830px) {
+    /*Navbar*/
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 300px;
+    }
+    .navbar ul li{
+        width: 50%;
+        margin: 0 auto;
+        letter-spacing: 2px;
+        transition: all .4s ease;
+    }
+    .navbar ul li:hover{
+        transition: all .4s ease;
+    }
+
+    .navbar ul li:hover a{
+        scale: 1.2;
+        font-weight: 600;
+        transition: all .4s ease;
+
+    }
+    /*Main*/
+    main h1{
+        text-align: center;
+    }
+    /*Container*/
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*block figure*/
+
+    .block-figures{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;  
+    }
+    .block-figures figure{
+        flex: 1;
+        width: 50%;
+        
+    }
+    .block-figures figure img{
+       width: 100%; 
+       min-width: 150px;
+       min-height: 170px;
+    }
+    /*Asside*/
+    .main-aside{
+        flex: 1;
+        width: 70%;
+        background-color: #4b8ecd;
+        color: #e8e8e8;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .main-aside figure{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .main-aside figure img{
+        width: 100%;
+    }
+
+ }
+
